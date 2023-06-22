@@ -20,24 +20,20 @@ from m8n.config import OWNER_USERNAME
 async def start_(client: Client, message: Message):
     await message.reply_photo(
         photo=f"{START_PIC}",
-        caption=f""" **‹ مرحبا بك عزيزي في بوت** **{BOT_NAME}**
-        
- **- ⌯︰انا بوت تشغيل الاغاني في المكالمات 🎙**
-
-**⌯︰يمكنك رؤيه الاوامر في الاسفل 🎙** ›""",
+        caption=f""" """,
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "‹ الاعدادات ›", callback_data="cbabout"),
+                        "", callback_data="cbabout"),
                 ],
                 [
                     InlineKeyboardButton(
-                        "‹ الاوامر ›", callback_data="cbevery")
+                        "", callback_data="cbevery")
                 ],
                 [
                     InlineKeyboardButton(
-                        "‹ اضفني الى مجموعتك ›", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")
+                        "", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")
                 ]
            ]
         ),
